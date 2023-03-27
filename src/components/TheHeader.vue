@@ -6,43 +6,43 @@ export default {
             navLinks: [
                 {
                     href: "#characters",
-                    text: "CHARACTERS",
+                    text: "characters",
                 },
                 {
                     href: "#comics",
-                    text: "COMICS",
+                    text: "comics",
                 },
                 {
                     href: "#movies",
-                    text: "MOVIES",
+                    text: "movies",
                 },
                 {
                     href: "#tv",
-                    text: "TV",
+                    text: "tv",
                 },
                 {
                     href: "#games",
-                    text: "GAMES",
+                    text: "games",
                 },
                 {
                     href: "#collectibles",
-                    text: "COLLECTIBLES",
+                    text: "collectibles",
                 },
                 {
                     href: "#videos",
-                    text: "VIDEOS",
+                    text: "videos",
                 },
                 {
                     href: "#fans",
-                    text: "FANS",
+                    text: "fans",
                 },
                 {
                     href: "#news",
-                    text: "NEWS",
+                    text: "news",
                 },
                 {
                     href: "#shop",
-                    text: "SHOP",
+                    text: "shop",
                 },
             ]
         }
@@ -75,9 +75,6 @@ header {
     background-color: white;
 
     .container {
-        max-width: 1170px;
-        margin: auto;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -92,10 +89,10 @@ header {
         }
 
         li {
-            list-style: none;
             height: 100%;
             margin: 0 1rem;
             position: relative;
+            text-transform: uppercase;
 
             a {
                 color: black;

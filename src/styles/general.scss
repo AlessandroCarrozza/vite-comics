@@ -4,3 +4,13 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    height: 100%;
+}

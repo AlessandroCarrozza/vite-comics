@@ -6,13 +6,27 @@ export default {
 
 
 <template>
-    <main></main>
+    <main>
+        <div class="container">
+            <h1>Content goes here</h1>
+        </div>
+    </main>
 </template>
 
 
-<style>
+<style scoped lang="scss">
 main {
     height: 150px;
-    background-color: black;
+    background-color: #1c1c1c;
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        h1 {
+            color: white;
+        }
+    }
+
 }
 </style>
