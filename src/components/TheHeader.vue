@@ -5,7 +5,14 @@ export default {
 </script>
 
 
-<template></template>
+<template>
+    <header></header>
+</template>
 
 
-<style></style>
+<style>
+header {
+    height: 120px;
+    background-color: red;
+}
+</style>

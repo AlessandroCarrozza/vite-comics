@@ -5,7 +5,14 @@ export default {
 </script>
 
 
-<template></template>
+<template>
+    <div class="info-banner"></div>
+</template>
 
 
-<style></style>
+<style>
+.info-banner {
+    height: 200px;
+    background-color: green;
+}
+</style>

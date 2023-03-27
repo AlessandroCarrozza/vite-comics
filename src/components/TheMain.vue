@@ -5,7 +5,14 @@ export default {
 </script>
 
 
-<template></template>
+<template>
+    <main></main>
+</template>
 
 
-<style></style>
+<style>
+main {
+    height: 150px;
+    background-color: black;
+}
+</style>

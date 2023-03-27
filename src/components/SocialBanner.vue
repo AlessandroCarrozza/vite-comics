@@ -5,7 +5,14 @@ export default {
 </script>
 
 
-<template></template>
+<template>
+    <div class="social-banner"></div>
+</template>
 
 
-<style></style>
+<style>
+.social-banner {
+    height: 120px;
+    background-color: aqua;
+}
+</style>

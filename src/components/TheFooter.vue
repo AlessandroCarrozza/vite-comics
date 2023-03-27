@@ -5,7 +5,14 @@ export default {
 </script>
 
 
-<template></template>
+<template>
+    <footer></footer>
+</template>
 
 
-<style></style>
+<style>
+footer {
+    height: 400px;
+    background-color: grey;
+}
+</style>
