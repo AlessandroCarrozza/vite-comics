@@ -1,5 +1,19 @@
 <script>
+
+import TheHeader from "./components/TheHeader.vue"
+import TheMain from "./components/TheMain.vue"
+import InfoBanner from "./components/InfoBanner.vue"
+import TheFooter from "./components/TheFooter.vue"
+import SocialBanner from "./components/SocialBanner.vue"
+
 export default {
+  components: {
+    TheHeader,
+    TheMain,
+    InfoBanner,
+    TheFooter,
+    SocialBanner
+  },
   data() {
 
   },
@@ -12,15 +26,15 @@ export default {
 
 
 <template>
-  <header>header</header>
+  <TheHeader></TheHeader>
 
-  <main>main</main>
+  <TheMain></TheMain>
 
-  <div class="info-banner">banner1</div>
+  <InfoBanner></InfoBanner>
 
-  <footer>footer</footer>
+  <TheFooter></TheFooter>
 
-  <div class="social-banner">banner2</div>
+  <SocialBanner></SocialBanner>
 </template>
 
 
