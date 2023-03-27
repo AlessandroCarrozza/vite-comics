@@ -44,19 +44,21 @@ export default {
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins";
+
 .info-banner {
     height: 180px;
-    background-color: #0282f9;
+    background-color: $color-primary;
 
     .container {
-        display: flex;
-        align-items: center;
+        @include mixins.flex-ali-center;
         justify-content: space-around;
 
         li {
             display: flex;
             align-items: center;
-            color: white;
+            color: $color-secondary;
             text-transform: uppercase;
             font-size: 0.9rem;
 

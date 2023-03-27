@@ -15,16 +15,18 @@ export default {
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins";
+
 main {
     height: 150px;
     background-color: #1c1c1c;
 
     .container {
-        display: flex;
-        align-items: center;
+        @include mixins.flex-ali-center;
 
         h1 {
-            color: white;
+            color: $color-secondary;
         }
     }
 

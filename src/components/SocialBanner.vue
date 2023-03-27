@@ -32,29 +32,30 @@ export default {
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins";
+
 .social-banner {
     height: 120px;
-    background-color: #303030;
+    background-color: $bg-social-banner;
 
     .container {
-        display: flex;
+        @include mixins.flex-ali-center;
         justify-content: space-between;
-        align-items: center;
 
         .btn {
             background-color: #303030;
-            border: 3px solid #0282f9;
+            border: 3px solid $color-primary;
             padding: 1.2rem 1.6rem;
-            color: white;
+            color: $color-secondary;
             font-size: 1.2rem;
         }
 
         .socials {
-            display: flex;
-            align-items: center;
+            @include mixins.flex-ali-center;
 
             h2 {
-                color: #0282f9;
+                color: $color-primary;
                 padding: 0 1rem;
             }
 
@@ -63,6 +64,8 @@ export default {
 
                 li {
                     padding: 0 0.5rem;
+                    position: relative;
+                    top: 2px;
                 }
             }
         }

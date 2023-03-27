@@ -70,9 +70,12 @@ export default {
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins";
+
 header {
     height: 120px;
-    background-color: white;
+    background-color: $color-secondary;
 
     .container {
         display: flex;
@@ -98,13 +101,13 @@ header {
                 color: black;
                 height: 100%;
                 display: block;
-                display: flex;
-                align-items: center;
-                font-size: 0.8rem;
+                @include mixins.flex-ali-center;
+                font-size: 0.9rem;
                 font-weight: 600;
+                letter-spacing: -0.5px;
 
                 &:hover {
-                    color: #0c7cec;
+                    color: $color-primary;
                 }
             }
 
@@ -112,7 +115,7 @@ header {
                 position: absolute;
                 width: 100%;
                 height: 7px;
-                background-color: #0c7cec;
+                background-color: $color-primary;
                 bottom: 0;
                 display: none;
             }

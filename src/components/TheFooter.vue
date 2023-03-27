@@ -51,6 +51,9 @@ export default {
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins";
+
 footer {
     background-image: url("../assets/footer-bg.jpg");
     background-size: cover;
@@ -77,7 +80,7 @@ footer {
                 padding-right: 5rem;
 
                 h2 {
-                    color: white;
+                    color: $color-secondary;
                     padding: 1rem 0;
                 }
 
@@ -86,7 +89,7 @@ footer {
                 }
 
                 a {
-                    color: #c4ccd1;
+                    color: $color-secondary;
                     font-size: 0.9rem;
 
                     &:hover {
