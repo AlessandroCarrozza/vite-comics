@@ -22,25 +22,25 @@ export default {
             <div class="links">
                 <div class="side-links">
                     <ul>
-                        <h1>DC COMICS</h1>
+                        <h2>DC COMICS</h2>
                         <li v-for="link in dcComicsLinks"><a href="#">{{ link }}</a></li>
                     </ul>
                     <ul>
-                        <h1>SHOP</h1>
+                        <h2>SHOP</h2>
                         <li v-for="link in shopLinks"><a href="#">{{ link }}</a></li>
                     </ul>
                 </div>
 
                 <div class="side-links">
                     <ul>
-                        <h1>DC</h1>
+                        <h2>DC</h2>
                         <li v-for="link in dcLinks"><a href="#">{{ link }}</a></li>
                     </ul>
                 </div>
 
                 <div class="side-links">
                     <ul>
-                        <h1>SITES</h1>
+                        <h2>SITES</h2>
                         <li v-for="link in sitesLinks"><a href="#">{{ link }}</a></li>
                     </ul>
                 </div>
@@ -75,25 +75,26 @@ footer {
 
             .side-links {
                 padding-right: 5rem;
-            }
 
-            h1 {
-                color: white;
-                padding: 1rem 0;
-            }
+                h2 {
+                    color: white;
+                    padding: 1rem 0;
+                }
 
-            li {
-                padding: 3px 0;
-            }
+                li {
+                    padding: 3px 0;
+                }
 
-            a {
-                color: #c4ccd1;
-                font-size: 0.9rem;
+                a {
+                    color: #c4ccd1;
+                    font-size: 0.9rem;
 
-                &:hover {
-                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
+
         }
 
     }
