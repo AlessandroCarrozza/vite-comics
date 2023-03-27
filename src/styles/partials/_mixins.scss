@@ -1,0 +1,10 @@
+@mixin d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-ali-center {
+    display: flex;
+    align-items: center;
+}
