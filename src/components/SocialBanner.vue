@@ -13,6 +13,6 @@ export default {
 <style>
 .social-banner {
     height: 120px;
-    background-color: aqua;
+    background-color: #303030;
 }
 </style>

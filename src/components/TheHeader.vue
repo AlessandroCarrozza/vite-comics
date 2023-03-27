@@ -96,7 +96,6 @@ header {
 
             a {
                 color: black;
-                text-decoration: none;
                 height: 100%;
                 display: block;
                 display: flex;

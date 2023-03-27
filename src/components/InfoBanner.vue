@@ -5,23 +5,23 @@ export default {
         return {
             infos: [
                 {
-                    src: "buy-comics-digital-comics.png",
+                    src: "comics-digital-comics.png",
                     text: "digital comics",
                 },
                 {
-                    src: "buy-comics-merchandise.png",
+                    src: "comics-merchandise.png",
                     text: "dc merchandise",
                 },
                 {
-                    src: "buy-comics-subscriptions.png",
+                    src: "comics-subscriptions.png",
                     text: "subscription",
                 },
                 {
-                    src: "buy-comics-shop-locator.png",
+                    src: "comics-shop-locator.png",
                     text: "shop locator",
                 },
                 {
-                    src: "buy-dc-power-visa.svg",
+                    src: "dc-power-visa.svg",
                     text: "dc power visa",
                 },
             ]
@@ -35,7 +35,7 @@ export default {
     <div class="info-banner">
         <ul class="container">
             <li v-for="info in infos">
-                <img :src="'./src/assets/' + info.src">
+                <img :src="'./src/assets/buy-' + info.src" :alt="info.text">
                 <span>{{ info.text }}</span>
             </li>
         </ul>
