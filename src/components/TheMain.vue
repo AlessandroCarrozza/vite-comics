@@ -92,6 +92,8 @@ export default {
 <template>
     <main>
         <div class="container">
+            <div class="current-series">CURRENT SERIES</div>
+
             <div class="box" v-for="(card, index) in cards" :key="index">
                 <SingleCard :image="card.thumb" :title="card.series"></SingleCard>
             </div>
@@ -107,18 +109,32 @@ export default {
 @use "../styles/partials/mixins";
 
 main {
-    padding: 3rem 0 1.5rem;
+    // padding: 3rem 0 1.5rem;
     background-color: $bg-main-content;
+    padding-bottom: 1rem;
 
     .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding-bottom: 1.5rem;
+        position: relative;
+
+        .current-series {
+            position: absolute;
+            width: 270px;
+            height: 60px;
+            left: 0;
+            top: -30px;
+            background-color: $color-primary;
+            font-weight: 800;
+            color: $color-secondary;
+            font-size: 1.5rem;
+            @include mixins.d-flex-center;
+        }
 
         .box {
             width: 170px;
-            padding: 1.5rem 0;
+            padding-top: 4rem;
         }
     }
 
@@ -129,6 +145,7 @@ main {
         width: 200px;
         padding: 0.5rem 0;
         margin: auto;
+        margin-top: 2rem;
         color: $color-secondary;
     }
 
