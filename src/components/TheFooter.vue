@@ -60,7 +60,7 @@ footer {
 
     .container {
         position: relative;
-        padding: 4rem 0;
+        padding: 2rem 0 3rem;
 
         // img {
         //     transform: rotate(-30deg);

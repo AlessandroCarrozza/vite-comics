@@ -93,9 +93,11 @@ export default {
     <main>
         <div class="container">
             <div class="box" v-for="(card, index) in cards" :key="index">
-                <SingleCard></SingleCard>
+                <SingleCard :image="card.thumb" :title="card.series"></SingleCard>
             </div>
         </div>
+
+        <a href="#" class="btn-load">LOAD MORE</a>
     </main>
 </template>
 
@@ -105,15 +107,29 @@ export default {
 @use "../styles/partials/mixins";
 
 main {
-    height: 150px;
+    padding: 3rem 0 1.5rem;
     background-color: $bg-main-content;
 
     .container {
-        @include mixins.flex-ali-center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 1.5rem;
 
-        h1 {
-            color: $color-secondary;
+        .box {
+            width: 170px;
+            padding: 1.5rem 0;
         }
+    }
+
+    .btn-load {
+        display: block;
+        text-align: center;
+        background-color: $color-primary;
+        width: 200px;
+        padding: 0.5rem 0;
+        margin: auto;
+        color: $color-secondary;
     }
 
 }

@@ -46,7 +46,7 @@ export default {
         .btn {
             background-color: #303030;
             border: 3px solid $color-primary;
-            padding: 1.2rem 1.6rem;
+            padding: 1rem 1.6rem;
             color: $color-secondary;
             font-size: 1.2rem;
         }
